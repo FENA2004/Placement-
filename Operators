@@ -1,0 +1,44 @@
+1.Operators - The Newspaper Agency
+Link:https://www.hackerrank.com/contests/fundamentals-of-programming/challenges/the-newspaper-agency-5
+
+#code
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt(); 
+        int b = scanner.nextInt(); 
+        int c = scanner.nextInt(); 
+        int fixedCost = 100;
+        int income = a * b;
+        int variableCost = a * c;
+        int totalCost = variableCost + fixedCost;
+        int profit = income - totalCost;
+        System.out.println(profit);
+    }
+}
+
+
+2.Operators - Harry Potter
+Link:https://www.hackerrank.com/contests/fundamentals-of-programming/challenges/harry-potter-5
+
+#code
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.next();
+        if (input.charAt(0) == '-' || input.charAt(0) == '+') {
+            input = input.substring(1);
+        }
+
+        int firstDigit = Character.getNumericValue(input.charAt(0));
+        int lastDigit = Character.getNumericValue(input.charAt(input.length() - 1));
+
+        System.out.println(firstDigit + lastDigit);
+    }
+}
+
+
